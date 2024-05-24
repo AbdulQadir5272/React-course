@@ -1,3 +1,67 @@
-#heading{
-    color: red;
+.header {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px rgb(209, 209, 209);
+}
+
+.logo {
+  width: 150px;
+}
+
+.nav_items ul {
+  font-size: 24px;
+  display: flex;
+  list-style-type: none;
+}
+
+.nav_items ul li {
+  padding: 10px;
+  margin: 10px;
+}
+
+.searchBar {
+  padding: 20px 0px;
+}
+
+.res_container{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1508px;
+}
+
+.res_card {
+  width: 240px;
+  /* height: 335px; */
+  padding: 15px;
+  transition: all 0.3s;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.res_card:hover{
+  box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.503);
+  cursor: pointer;
+}
+
+.res_img {
+  width: 100%;
+  border-radius: 10px;
+  min-height: 240px;
+  max-height: 240px;
+}
+
+.res_info {
+  padding: 0px 10px;
+}
+
+.res_info h2,
+.res_info .star_rate {
+  padding: 0;
+  margin: 0;
+}
+
+.address{
+  padding-top: 5px;
+  margin: 0;
 }
