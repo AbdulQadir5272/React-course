@@ -1,4 +1,4 @@
-// import { CDN_URL } from "../utils/constant";
+import { CDN_URL } from "../utils/constant";
 
 const RestaurantCard = (props) => {
   console.log("props.resData:", props.resData); // Debugging statement
@@ -10,7 +10,7 @@ const RestaurantCard = (props) => {
     sla: { deliveryTime},
     locality,
     costForTwo,
-  } = props.resData?.info || {};debugger // Provide a default empty object to avoid destructuring errors
+  } = props.resData?.info || {}; // Provide a default empty object to avoid destructuring errors
 
   // Ensure sla is defined before destructuring deliveryTime
 
@@ -18,7 +18,7 @@ const RestaurantCard = (props) => {
     <div className="res_card">
       <img
         className="res_img"
-        src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId}
+        src={CDN_URL + cloudinaryImageId}
         alt="res-logo"
       />
       <div className="res_info">
